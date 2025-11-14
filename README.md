@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  Streaming Dashboard Clone
 
-## Getting Started
+A clean and modern movie browsing application built with **Next.js**, **Tailwind CSS**, and the **OMDb API**.  
+It lets users explore movies, view featured banners, browse rows, and see full movie details.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js 14 (App Router)**
+- **TypeScript**
+- **Tailwind CSS**
+- **OMDb API**
+- **React Icons**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+### Hero Banner  
+- Displays a featured movie at the top  
+- Responsive full-screen background  
+- Includes title and tagline  
+- Styled using Tailwind CSS
 
-To learn more about Next.js, take a look at the following resources:
+### Movie Rows  
+- Netflix-style horizontal movie rows  
+- Smooth scrolling  
+- Hover zoom animation  
+- Posters fetched dynamically from OMDb  
+- Proper spacing using `gap-4`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Movie Card Component  
+- Reusable card for posters  
+- Contains movie image + title  
+- Fallback image support  
+- Smooth hover animation  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Movie Details Page  
+- Dedicated page `/movie/[id]`  
+- Displays:
+  - Poster  
+  - Title  
+  - Plot  
+  - Genre  
+  - Runtime  
+  - Actors  
+  - Ratings  
+  - Year  
+- Clean layout using Flexbox
 
-## Deploy on Vercel
+### Navbar  
+- Simple, clean and responsive  
+- Includes logo + nav links + search icon  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
