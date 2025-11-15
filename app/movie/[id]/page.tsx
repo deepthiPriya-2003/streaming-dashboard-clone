@@ -3,9 +3,9 @@ export const dynamic = "force-dynamic";
 import Image from "next/image";
 import { fetchMovieById } from "@/lib/omdb";
 
-export default async function MovieDetails(props: { params: Promise<{ id: string }> }) {
-  const { id } = await props.params;
-  const movie = await fetchMovieById(id);
+export default async function MovieDetails({ params }: { params: { id: string } }) {
+  const movie = await fetchMovieById(params.id);
+  
 
   return (
     <section className="w-full min-h-screen text-white px-6 py-10 bg-gradient-to-b from-black via-[#0a0a0a] to-black">
