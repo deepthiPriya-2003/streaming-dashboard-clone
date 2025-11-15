@@ -26,7 +26,7 @@ export async function fetchTeluguMovies() {
 }
 
 
-
+// Fetch Movies by Id
 export async function fetchMovieById(id: string) {
   const res = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`);
 
